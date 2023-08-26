@@ -1,10 +1,9 @@
-const int led = 13; // Led Pin Number
 const int button=4;
 bool buttonstatus=false;
 bool buttonlaststatus=false;
 
 void setup() {
-  pinMode(led, OUTPUT);    // Setting the pin as OUTPUT pin
+  pinMode(LED_BUILTIN, OUTPUT);    // Setting the pin as OUTPUT pin
   pinMode(button, INPUT);
 }
 
