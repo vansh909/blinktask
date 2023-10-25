@@ -111,15 +111,15 @@ void loop() {
 void blinkFunc(const char* morsecode) {
   for (int i = 0; i<morsecode.length; i++) {    // For Loop For Running Through the Morsecode
     if (morsecode[i] == '.') {            // For Running The dot Method
-      digitalWrite(led, HIGH);       // Setting pin high
+      digitalWrite(LED_BUILTIN, HIGH);       // Setting pin high
       delay(500);
-      digitalWrite(led, LOW);        // Setting the pin Low
+      digitalWrite(LED_BUILTIN, LOW);        // Setting the pin Low
       delay(400);
     }
     else if (morsecode[i] == '-') {       // Run the Dash Method
-      digitalWrite(led, HIGH);         // Set the pin-High
+      digitalWrite(LED_BUILTIN, HIGH);         // Set the pin-High
       delay(1800);
-      digitalWrite(led, LOW);        // Setting the pin Low
+      digitalWrite(LED_BUILTIN, LOW);        // Setting the pin Low
       delay(400);
     }
   }
