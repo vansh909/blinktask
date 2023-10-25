@@ -109,7 +109,7 @@ void loop() {
 }
 
 void blinkFunc(const char* morsecode) {
-  for (int i = 0; morsecode[i]; i++) {    // For Loop For Running Through the Morsecode
+  for (int i = 0; i<morsecode.length; i++) {    // For Loop For Running Through the Morsecode
     if (morsecode[i] == '.') {            // For Running The dot Method
       digitalWrite(led, HIGH);       // Setting pin high
       delay(500);
