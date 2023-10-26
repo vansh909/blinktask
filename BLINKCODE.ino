@@ -1,4 +1,4 @@
-const int button=4;
+const int button=D4;
 bool buttonstatus=false;
 bool buttonlaststatus=false;
 
